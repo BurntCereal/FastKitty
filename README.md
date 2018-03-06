@@ -4,7 +4,7 @@ A cryptokitty bot that snoops txs as they arrive to the smart contract to allow 
 
 Still beneficial to anyone looking for a cat with certain attributes at a certain price.
 
-#How to use:
+## How to use:
 
 There are two modes of operation, manual and auto:
 
