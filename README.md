@@ -4,7 +4,7 @@ A cryptokitty bot that snoops txs as they arrive to the smart contract to allow 
 
 Still beneficial to anyone looking for a cat with certain attributes at a certain price.
 
-How to use:
+#How to use:
 
 There are two modes of operation, manual and auto:
 
@@ -13,7 +13,6 @@ Manual
 1) Enter your private key (make sure MetaMask is disabled, see note at bottom)
 2) Wait for new cats to sells to reach network (volume dependent)
 3) Select a cat you want and hit purchase (keep an eye on the price)
-
 
 Auto
 
