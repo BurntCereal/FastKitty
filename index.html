@@ -1,0 +1,143 @@
+ <html>
+
+
+ <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+
+  	<!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+
+
+  <!-- Ether APIs-->
+  <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.min.js"></script>
+  <script src="https://cdn.rawgit.com/emn178/js-sha3/master/build/sha3.min.js"></script>
+  <script src="https://cdn.rawgit.com/ethereumjs/browser-builds/master/dist/ethereumjs-tx/ethereumjs-tx-1.3.3.min.js"></script>
+
+
+
+
+
+
+    <!-- Bootstrap core CSS / bootswatch theme-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.2/sandstone/bootstrap.min.css" crossorigin="anonymous">
+
+      <!-- Custom styles  -->
+    <link href="Kitty.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- Header -->
+    <header class="bg-primary text-white">
+      <div class="container.fluid" id="header">
+        <h3 class="mb-0 mr-auto">Source code and README on github: https://github.com/BurntCereal/FastKitty/</h3>
+        <h3 class="mb-0"></h3>
+      </div>
+    </header>
+
+
+      <!-- Header -->
+    <header class="masthead bg-warning text-center">
+      <div class="container" id="header">
+        <br>
+        <h1 class="text-uppercase" style="padding-top:40px; margin:40px;">FastKitty</h1>
+        <h4 id="buy_mode">Mode: Manual Buy</h4>
+        <br>
+        <br>
+      </div>
+    </header>
+
+    <div class="container.fluid" id="trading_view">
+        
+        <!-- orders and priv key and auto buy-->
+      <div class="row">
+          <div class="col-md-4" id="order_form">
+
+          <button type="button" class="btn btn-secondary" role="button" id="buy_button" disabled="true">Purchase</button>
+
+          <!-- Track the tx's -->
+          <div id="itemsToPurchase">
+            Items on order: 
+
+              <div id="buy_items_menu">
+              </div>
+
+            <br>
+            <br>
+          </div>
+
+
+            <form name="sentMessage" id="trade_form" novalidate="novalidate">
+              <div class="control-group">
+                  <label id="autobuy_label">Autobuy Parameters (buys kitties with any of the selected attributes)</label>
+                  <br>
+                <div class="form-group floating-label-form-group controls mb-0 pb-2" style="border-top:1px solid black;">
+
+                 
+                  <label for="cattributes" id="autobuy_label">Desired Attributes (By % in existence):</label>
+                  <select name="skills" multiple="" class="ui fluid search dropdown" id='dropskills'></select>
+                  <label id="max_price">Max Price (Ether)</label>
+                  <input type="text" class="form-control" id="price_form">
+          <button type="button" class="btn btn-secondary" role="button" id="autobuy_button" disabled="true">Toggle Autobuy</button>
+
+                  <br>
+                  <br>
+                  
+                  <div class="control-group" style="border:1px solid black;">
+                  <label id="priv_key_label">Ether Private Key (Not transmitted over network)</label>
+                  <textarea class="form-control" id="priv_key_text" rows="1" placeholder="Private Key" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <button type="button" class="btn btn-primary btn-xl" id="setAccount">Set Account</button>
+                  </div>
+               
+                </div>
+              </div>
+              <br>
+             
+            </form>
+
+
+          </div>
+
+
+          <div class="col-md-7" style="border-left: 1px solid;">
+
+            <div class="ui segment">
+                                  <p></p>
+                                  <br><br>
+
+              
+              <div class="ui active inverted dimmer">
+                <div class="ui text indeterminate small loader" id="load_status">Waiting for new cats to reach smart contract...(may take a few minutes depending on volume)</div>
+
+
+              </div>
+              <p></p>
+
+
+            </div>
+
+             <label>(click to select)</label>
+                                        <div id="trading_react_root"></div>
+
+
+                      
+
+          </div>
+          
+
+
+      </div>
+
+    </div>
+
+
+
+<!--Kitty JS Client-->
+  <script src="kitty.js"></script>
+
+
+  </html>
