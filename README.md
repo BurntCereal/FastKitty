@@ -26,5 +26,5 @@ If you would like additional features or encounter any issues, please create a r
 Note: This tool was created during the initial days of cryptokitties when congestion caused MetaMask to load very slowly. This solution allows you to use your private key directly in your browser (make sure MetaMask is disabled), for security reasons it is recommended you clone and use locally. The private key is only used in your client!
 
 ### Config
-There is no guarentee that the keys used to talk to the ether mainnet, etherscan socket or original contract will still be operational, in that case the respective values will need to be updated if used locally.
+There is no guarantee that the keys used to talk to the ether mainnet, etherscan socket or original contract will still be operational, in that case the respective values will need to be updated if used locally.
 
