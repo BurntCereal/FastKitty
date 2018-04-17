@@ -28,3 +28,5 @@ Note: This tool was created during the initial days of cryptokitties when conges
 ### Config
 There is no guarantee that the keys used to talk to the ether mainnet, etherscan socket or original contract will still be operational, in that case the respective values will need to be updated if used locally.
 
+#### Verified and listed by official subreddit
+https://www.reddit.com/r/CryptoKitties/wiki/sidebarsites
