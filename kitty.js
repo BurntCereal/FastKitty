@@ -58,7 +58,6 @@ class ListItem extends React.Component
 
 render() {
 
-    //setState is async this may not be the best
     const textColor = this.state.isSelected ? "red" : "black";
 
 
