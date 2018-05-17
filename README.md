@@ -30,3 +30,5 @@ There is no guarantee that the keys used to talk to the ether mainnet, etherscan
 
 #### Verified and listed by official subreddit
 https://www.reddit.com/r/CryptoKitties/wiki/sidebarsites
+
+initial: https://www.reddit.com/r/CryptoKittiesMarket/comments/82kn2k/fastkitty_auto_purchase_tool/
