@@ -1,3 +1,6 @@
+# Update 08-29-2018
+Etherscan has taken down their websocket endpoint wss://socket.etherscan.io/wshandler, which was used to listen in on contract transactions, therefore this application will not work. If you would like to continue using it, you can either host your own etherium node or use a different provider (some code will need to be modified)
+
 # FastKitty
 
 A cryptokitty bot that snoops txs as they arrive to the smart contract to allow submission of purchase orders before they arrive on marketplace. Designed during the high volume days of cryptokitties when it was released in 2017, I finally got around to uploading the code. 
